@@ -1,5 +1,6 @@
 const pool = require('../db');
 
+//obtener todos los prestamos
 const getAllLoans = async (req, res, next) => {
     
     try{
@@ -11,6 +12,7 @@ const getAllLoans = async (req, res, next) => {
     }
 }
 
+//obtener un prestamo
 const getLoan = async (req, res, next) => {
     
     try{
@@ -30,6 +32,7 @@ const getLoan = async (req, res, next) => {
     }
 }
 
+//crear un prestamo
 const createLoan = async (req, res, next) => {
     
     try{
@@ -43,6 +46,7 @@ const createLoan = async (req, res, next) => {
     }
 }
 
+//actualizar un prestamo
 const updateLoan = async (req, res, next) => {
     
     try{

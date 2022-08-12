@@ -3,7 +3,7 @@ const router = Router();
 const {getAllCategories, getCategory, createCategory, deleteCategory, updateCategory} = require('../controllers/categories.controller')
 const pool = require('../db');
 
-
+//rutas crud de categorias
 router.get('/categories', getAllCategories);
 
 router.get('/categories/:id', getCategory);

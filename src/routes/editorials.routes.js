@@ -3,7 +3,7 @@ const router = Router();
 const {getAllEditorials, getEditorial, createEditorial, deleteEditorial, updateEditorial} = require('../controllers/editorials.controller')
 const pool = require('../db');
 
-
+//rutas crud de editoriales
 router.get('/editorials', getAllEditorials);
 
 router.get('/editorials/:id', getEditorial);

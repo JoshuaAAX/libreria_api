@@ -1,6 +1,6 @@
 const pool = require('../db')
 
-
+//obtener todos los libros
 const getAllBooks = async (req, res, next) => {
      
      try{
@@ -12,6 +12,7 @@ const getAllBooks = async (req, res, next) => {
 	}
 };
 
+//obtener solo un libro
 const getBook = async (req, res, next) => {
      
      try { 
@@ -32,6 +33,7 @@ const getBook = async (req, res, next) => {
 
 };
 
+//crear un libro
 const createBook = async (req, res, next) => {
 
 	try {	
@@ -46,6 +48,7 @@ const createBook = async (req, res, next) => {
 	}
 };
 
+//borrar un libro
 const deleteBook = async (req, res, next) => {
 
      try {
@@ -65,6 +68,7 @@ const deleteBook = async (req, res, next) => {
 	}
 };
 
+//actualizar libro
 const updateBook = async (req, res, next) => {
      
      try {

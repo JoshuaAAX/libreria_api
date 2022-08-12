@@ -3,7 +3,7 @@ const  {getAllUsers, getUser, createUser, deleteUser, updateUser} = require('../
 const router = Router();
 const pool = require('../db');
 
-
+//rutas crud de usuarios
 router.get('/users', getAllUsers);
 
 router.get('/users/:id', getUser);

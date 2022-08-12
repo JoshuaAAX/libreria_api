@@ -1,5 +1,6 @@
 const pool = require('../db');
 
+//obtener todas las categorias
 const getAllCategories = async (req, res, next) => {
     
     try{
@@ -11,6 +12,7 @@ const getAllCategories = async (req, res, next) => {
     }
 };
 
+//obtener un categoria
 const getCategory = async (req, res, next) => {
     
     try{
@@ -31,6 +33,7 @@ const getCategory = async (req, res, next) => {
     }
 };
 
+//crear una categoria
 const createCategory = async (req, res, next) => {
     
     try{
@@ -43,6 +46,7 @@ const createCategory = async (req, res, next) => {
     }
 };
 
+//borrar una categoria
 const deleteCategory = async (req, res, next) => {
     
     try{
@@ -62,6 +66,7 @@ const deleteCategory = async (req, res, next) => {
     }
 };
 
+//actualizar una categoria
 const updateCategory= async (req, res, next) => {
    
     try{

@@ -1,5 +1,7 @@
 const pool = require('../db');
 
+//obtener todos los autores
+//params() -> return rowsAuthor
 const getAllAuthors =  async (req, res, next) => {
 
     try{
@@ -11,6 +13,8 @@ const getAllAuthors =  async (req, res, next) => {
     }
 }
 
+//obtener un autor
+//params(id.author) -> return rowS(id.author)
 const getAuthor = async (req, res, next) => {
 
     try{
@@ -30,6 +34,8 @@ const getAuthor = async (req, res, next) => {
     }
 }
 
+// crear autor
+//params(name_author, nacionality) -> return rows(id_author)
 const createAuthor = async (req, res, next) => {
 
     try{
@@ -44,6 +50,8 @@ const createAuthor = async (req, res, next) => {
     }
 }
 
+//borrar author
+//params(id_author) -> return signal(204)
 const deleteAuthor = async (req, res, next) => {
 
     try{
@@ -63,6 +71,8 @@ const deleteAuthor = async (req, res, next) => {
     }
 }
 
+//actualiza author
+//params(id_author, author.body) -> returns rows(id_author)
 const updateAuthor = async (req, res, next) => {
 
     try{

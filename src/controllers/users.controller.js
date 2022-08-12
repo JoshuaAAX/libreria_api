@@ -1,5 +1,6 @@
 const pool = require('../db')
 
+//obtener todos los usuario
 const getAllUsers = async (req, res, next) => {
      
     try{
@@ -11,6 +12,7 @@ const getAllUsers = async (req, res, next) => {
    }
 };
 
+//obtener un usuario
 const getUser= async (req, res, next) => {
     
     try { 
@@ -31,6 +33,7 @@ const getUser= async (req, res, next) => {
 
 };
 
+//crear un usuario
 const createUser= async (req, res, next) => {
 
    try {	
@@ -45,6 +48,7 @@ const createUser= async (req, res, next) => {
    }
 };
 
+//borrar un usuario
 const deleteUser = async (req, res, next) => {
 
     try {
@@ -64,6 +68,7 @@ const deleteUser = async (req, res, next) => {
    }
 };
 
+//actualizar usuario
 const updateUser = async (req, res, next) => {
     
     try {

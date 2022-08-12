@@ -3,7 +3,7 @@ const router = Router();
 const {getAllBooks, getBook, createBook, deleteBook, updateBook} = require('../controllers/books.controller')
 const pool = require('../db');
 
-
+//routas crud de libros
 router.get('/books', getAllBooks);
 
 router.get('/books/:isbn', getBook);

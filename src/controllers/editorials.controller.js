@@ -1,5 +1,6 @@
 const pool = require('../db');
 
+//obtener todas las editoriales
 const getAllEditorials = async (req, res, next) => {
     
     try{
@@ -11,6 +12,7 @@ const getAllEditorials = async (req, res, next) => {
     }
 }
 
+//obtener una editorial
 const getEditorial = async (req, res, next) => {
     
     try{
@@ -30,6 +32,7 @@ const getEditorial = async (req, res, next) => {
     }
 }
 
+//crear una editorial
 const createEditorial = async (req, res, next) => {
     
     try{
@@ -43,6 +46,7 @@ const createEditorial = async (req, res, next) => {
     }
 }
 
+//borrar una editorial
 const deleteEditorial = async (req, res, next) => {
     
     try{
@@ -62,6 +66,7 @@ const deleteEditorial = async (req, res, next) => {
     }
 }
 
+//actualizar una editorial
 const updateEditorial = async (req, res, next) => {
     
     try{
