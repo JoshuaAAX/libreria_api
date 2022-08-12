@@ -26,7 +26,7 @@ const getBook = async (req, res, next) => {
           
           return res.json(result.rows[0]);
      } 
-     catch (error) {
+     catch(error) {
           next(error)
 	}
 
@@ -41,7 +41,7 @@ const createBook = async (req, res, next) => {
 
           return res.send(result.rows[0]);
      } 
-     catch (error){
+     catch(error){
          next(error)
 	}
 };
@@ -81,7 +81,7 @@ const updateBook = async (req, res, next) => {
 	     }	
           return res.json(result.rows[0])
      } 
-     catch {
+     catch(error){
          next(error)
      }
      
