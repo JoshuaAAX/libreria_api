@@ -8,7 +8,7 @@ Backend de librería con las tecnologías nodejs y el framework de express,
 git
 nodejs
 npm
-postgresql
+docker
 ```
 
 ### Instalación
@@ -25,11 +25,11 @@ DB_DATABASE = d2qrisg9mjhm19
 ```
 
 
-ejecutar el comando de node
+ejecutar el comando de docker:
 
 ```
-$ npm install
-$ npm run dev
+$ docker build -t libreria_api .
+$ docker run -d -p 4000:4000 libreria_api
 ```
  
   
